@@ -12,6 +12,9 @@ else
   echo "Fetching the latest Zed release..."
   curl -f https://zed.dev/install.sh | sh
 
+  echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+  source ~/.bashrc
+
   # Test Zed installation
   zed --version
 
