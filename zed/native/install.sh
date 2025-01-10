@@ -9,11 +9,7 @@ else
   echo "Installing Zed Code Editor..."
 
   # Download the latest .deb package from the Zed GitHub releases
-  echo "Fetching the latest Zed release..."
-  curl -f https://zed.dev/install.sh | sh
-
-  echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-  source ~/.bashrc
+  flatpak install flathub dev.zed.Zed
 
   # Test Zed installation
   zed --version
