@@ -15,11 +15,13 @@ else
   #Add alias for Zed to .bashrc
     echo "Adding alias for Zed to .bashrc..."
     echo 'alias zed="flatpak run dev.zed.Zed"' >> ~/.bashrc
-    source ~/.bashrc
-    echo "Alias for Zed added successfully."
+    echo "Alias for Zed added successfully Please source .bashrc file."
 
   # Test Zed installation
   echo "Testing Zed installation..."
+  flatpak run dev.zed.Zed --version
+  flatpak run dev.zed.Zed
+
 
   echo "Zed Code Editor installation completed."
 fi
