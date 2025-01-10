@@ -19,7 +19,6 @@ else
 
   # Test Zed installation
   echo "Testing Zed installation..."
-  flatpak run dev.zed.Zed --version
   flatpak run dev.zed.Zed
 
 
