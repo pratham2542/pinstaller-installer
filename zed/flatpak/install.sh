@@ -9,21 +9,20 @@ else
   echo "Installing Zed Code Editor..."
 
   # Install Zed from Flathub
-  flatpak install -y flathub dev.zed.Zed
+  sudo flatpak install -y flathub dev.zed.Zed
 
   # Add alias for Zed to .bashrc
-  if ! grep -q 'alias zed=' ~/.bashrc; then
-    echo "Adding alias for Zed to .bashrc..."
-    echo 'alias zed="flatpak run dev.zed.Zed"' >> ~/.bashrc
-    source ~/.bashrc
-    echo "Alias for Zed added successfully."
-  else
-    echo "Alias for Zed already exists in .bashrc."
-  fi
+  # if ! grep -q 'alias zed=' ~/.bashrc; then
+  #   echo "Adding alias for Zed to .bashrc..."
+  #   echo 'alias zed="flatpak run dev.zed.Zed"' >> ~/.bashrc
+  #   source ~/.bashrc
+  #   echo "Alias for Zed added successfully."
+  # else
+  #   echo "Alias for Zed already exists in .bashrc."
+  # fi
 
   # Test Zed installation
   echo "Testing Zed installation..."
-  zed --version
 
   echo "Zed Code Editor installation completed."
 fi
