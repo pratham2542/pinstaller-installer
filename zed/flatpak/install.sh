@@ -10,7 +10,9 @@ else
 
   # Install Zed from Flathub
   flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-  flatpak install -y --noninteractive flathub dev.zed.Zed  # Add alias for Zed to .bashrc
+  flatpak install -y flathub dev.zed.Zed  
+  
+  # Add alias for Zed to .bashrc
   # if ! grep -q 'alias zed=' ~/.bashrc; then
   #   echo "Adding alias for Zed to .bashrc..."
   #   echo 'alias zed="flatpak run dev.zed.Zed"' >> ~/.bashrc
