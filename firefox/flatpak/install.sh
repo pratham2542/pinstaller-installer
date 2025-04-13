@@ -3,7 +3,7 @@
 # firefox.sh: Installation script for Firefox
 
 # Load the flatpak check function
-source "../../ensure_flatpak.sh"
+source "/tmp/pinstaller-installers/ensure_flatpak.sh"
 
 # Ensure Flatpak is installed
 ensure_flatpak_installed
