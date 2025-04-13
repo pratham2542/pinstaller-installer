@@ -3,8 +3,7 @@
 # zed.sh: Installation script for Zed Code Editor
 
 # Load the flatpak check function
-SCRIPT_DIR="$(dirname "$0")"
-source "$SCRIPT_DIR/ensure_flatpak.sh"
+source "../../ensure_flatpak.sh"
 
 # Ensure Flatpak is installed
 ensure_flatpak_installed
